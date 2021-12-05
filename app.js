@@ -33,9 +33,9 @@ mongoose
 
 // MY ROUTES..
 // for changing any name or path ..come here
-app.use("/api", authRoutes); // "/api" will be added to all the routes move to line 12
-app.use("/api", userRoutes);
-app.use("/api", productRoutes);
+app.use("/", authRoutes); // "/api" will be added to all the routes move to line 12
+app.use("/", userRoutes);
+app.use("/", productRoutes);
 
 app.listen(port, function () {
   console.log("app is running at the port 5000");
