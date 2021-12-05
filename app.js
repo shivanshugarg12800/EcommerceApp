@@ -37,6 +37,10 @@ app.use("/", authRoutes); // "/api" will be added to all the routes move to line
 app.use("/", userRoutes);
 app.use("/", productRoutes);
 
+app.get("/home", (req, res) => {
+  res.send("Hello world");
+});
+
 app.listen(port, function () {
   console.log("app is running at the port 5000");
 });
